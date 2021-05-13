@@ -14,7 +14,6 @@ body {
   margin-right: 200px;
 }
 
-
 html {
   height: 100%;
 }
@@ -393,8 +392,18 @@ pre.user-tracker {
   background-color: #566466;
 }
 
-// scroll bar css
+// contact page css
+#contactInteract {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+}
 
+#interactBtn {
+  width: 100%;
+}
+
+// scroll bar css
 /* width */
 ::-webkit-scrollbar {
   width: 12px;

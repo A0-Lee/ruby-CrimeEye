@@ -1,3 +1,5 @@
+<div class="interactPage" id="registerInteract">
+<div class="interactContent">
 <h1>Sign Up</h1>
 <hr>
 <h2>Register for a new account.</h2><br>
@@ -6,8 +8,7 @@
   <%= render "shared/form_errors", form: form %>
 
   <div class="mb-3">
-    <%= form.label :email %>
-    <%= form.text_field :email, class: "form-control" %>
+    <%= form.text_field :email, class: "form-control", placeholder: "Email" %>
   </div>
 
   <div class="mb-3">
@@ -16,19 +17,18 @@
   </div>
 
   <div class="mb-3">
-    <%= form.label :password %>
-    <%= form.password_field :password, class: "form-control" %>
+    <%= form.password_field :password, class: "form-control", placeholder: "Password" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, class: "form-control" %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password" %>
   </div>
 
-  <div class="mb-3">
-    <%= form.submit "Sign up", class: "btn btn-primary" %>
-  </div>
-  <div class="mb-3">
-    <%= link_to "Already have an account? Login here.", login_path %>
+  <div class="mb-4">
+    <%= form.submit "Sign up", class: "btn btn-primary", id: "interactBtn" %>
+    <br><br>
+    <%= link_to "Already have an account? Login here.", login_path, class: "hyperlink" %>
   </div>
 <% end %>
+</div>
+</div>

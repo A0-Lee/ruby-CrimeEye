@@ -2,6 +2,32 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.mb-5 {
+  text-align: center;
+  width: 100%;
+}
+
+.mb-5 #interactBtn {
+  width: 49%;
+}
+
+.interact #interactBtn {
+  width: 68%;
+}
+
+.interactPage {
+  padding-top: 7%;
+}
+
+#accountInteract{
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.hyperlinks #logout {
+  float: right;
+}
+
 .hr-text {
   line-height: 1em;
   position: relative;

@@ -14,6 +14,40 @@
  */
  @import "bootstrap";
 
+ // alert animation css
+.alert.alert-info.mt-4 {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  animation: hide 0.5s ease-out 3s 1 forwards;
+}
+
+
+.alert.alert-warning.mt-4 {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  text-align: center;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  animation: hide 0.5s ease-out 3s 1 forwards;
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// sidebar css
  .sidebar {
    height: 100%; /* 100% Full-height */
    width: 0; /* 0 width - change this with JavaScript */
@@ -122,4 +156,20 @@
      opacity: 0;
      visibility: hidden;
    }
+ }
+
+ // interaction page CSS
+ .interactPage{
+   padding-left: 30%;
+   padding-right: 30%;
+ }
+
+ .interactContent{
+     padding: 10%;
+     background-color: #f7f7f7;
+     box-shadow: 0px 0px 15px 10px #ddd
+ }
+
+ .interact{
+   text-align: center;
  }

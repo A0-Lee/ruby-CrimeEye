@@ -1,19 +1,22 @@
-<h1>Edit Password</h1>
-
+<div class="interactPage">
+<div class="interactContent">
+<h1>Change Password</h1>
+<br>
 <%= form_with model: Current.user, url: edit_password_path, local: true do |form| %>
   <%= render "shared/form_errors", form: form %>
 
   <div class="mb-3">
-    <%= form.label :password %>
-    <%= form.password_field :password, class: "form-control" %>
+    <%= form.password_field :password, class: "form-control", placeholder: "Password" %>
   </div>
 
   <div class="mb-3">
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation, class: "form-control" %>
+    <%= form.password_field :password_confirmation, class: "form-control", placeholder: "Confirm Password" %>
   </div>
 
   <div class="mb-3">
-    <%= form.submit "Update Password", class: "btn btn-primary" %>
+    <%= form.submit "Update Password", class: "btn btn-primary", id: "interactBtn" %>
   </div>
 <% end %>
+<%= link_to "Back to Account", account_path, class: "link", id: "interactBtn" %>
+</div>
+</div>
