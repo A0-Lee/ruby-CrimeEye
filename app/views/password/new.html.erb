@@ -1,20 +1,13 @@
-<div class="interactPage" id="passwordInteract">
-<div class="interactContent">
-<h1>Forgot your password?</h1>
+<h1>Forgotten your password?</h1>
 <hr>
-<h4>Enter your email for recovery</h4>
+
 <%= form_with url: reset_password_path, local: true do |form| %>
   <div class="mb-3">
-    <%= form.text_field :email, class: "form-control", placeholder: "Email" %>
+    <%= form.label :email %>
+    <%= form.text_field :email, class: "form-control" %>
   </div>
 
   <div class="mb-3">
-    <%= form.submit "Reset Password", class: "btn btn-primary", id: "interactBtn" %>
-  </div>
-  
-  <div class="mb-3">
-    <%= link_to "Back to Login", login_path, class: "link" %>
+    <%= form.submit "Reset Password", class: "btn btn-primary" %>
   </div>
 <% end %>
-</div>
-</div>

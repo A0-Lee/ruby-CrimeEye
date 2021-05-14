@@ -1,0 +1,32 @@
+<h1>Contact Us</h1>
+<hr>
+<h2>Got a burning question for our team? Ask away! </h2><br>
+<%= form_for @contact, url: contact_us_path, local: true do |form| %>
+
+  <div class="mb-3">
+    <%= form.label :name %>
+    <%= form.text_field :name, required: true, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :email %>
+    <%= form.text_field :email, required: true, class: "form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= form.label :message %>
+    <%= form.text_area :message, required: true, class: "form-control", placeholder: "Send me a message" %>
+  </div>
+
+  <!-- <div class="hidden mb-3">
+    <%= form.label :nickname %>
+    <%= form.text_field :nickname, class: "form-control", :hint => 'Leave this field blank!' %>
+  </div> -->
+
+  <%= hidden_field_tag :nickname %>
+
+  <div class="mb-3">
+    <%= form.submit 'Send Message', class: 'btn btn-primary' %>
+  </div>
+
+<% end %>

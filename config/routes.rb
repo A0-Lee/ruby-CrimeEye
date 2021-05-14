@@ -7,8 +7,6 @@ Rails.application.routes.draw do
   get 'main/home'
   get 'main/about'
   get 'main/emergency'
-  get 'main/contact'
-  post 'main/contact', to: 'main#create'
 
   get 'sign_up', to: 'registration#new'
   post 'sign_up', to: 'registration#create'
@@ -30,4 +28,7 @@ Rails.application.routes.draw do
   get 'account', to: 'session#account'
 
   root 'session#new'
+
+  get 'contact_us', to: 'contact#index'
+  post 'contact_us', to: 'contact#create'
 end

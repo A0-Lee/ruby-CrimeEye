@@ -5,7 +5,7 @@
       <li><%= link_to "Map", main_home_path, class: "link" %></li>
       <li><%= link_to "About", main_about_path, class: "link" %></li>
       <li><%= link_to "Emergency", main_emergency_path, class: "link" %></li>
-      <li><%= link_to "Contact Us", main_contact_path, class: "link" %></li>
+      <li><%= link_to "Contact Us", contact_us_path, class: "link" %></li>
       <% if Current.user || Current.twitter_user %>
         <li><%= link_to "My Account", account_path, class: "link" %></li>
         <li><%= link_to "Logout", logout_path, method: :delete, class: "link" %></li>
@@ -23,5 +23,5 @@
         $('ul li a').click(function(){
             $(this).parent().addClass('active').siblings().removeClass('active')
         })
-    });
+    })
 </script>
